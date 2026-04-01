@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "about": "Обо мне",
+    "skills": "Навыки",
+    "projects": "Проекты",
+    "experience": "Опыт",
+    "contacts": "Контакты",
+    "resume": "Резюме",
+    "downloadResume": "Скачать PDF"
+  },
+  "hero": {
+    "greeting": "Привет, я",
+    "role": "Frontend-разработчик",
+    "description": "Создаю продукты, которые работают. Использую современные технологии и AI для быстрой и качественной разработки.",
+    "cta": "Смотреть проекты",
+    "downloadResume": "Скачать резюме"
+  },
+  "about": {
+    "title": "Обо мне",
+    "text": "Frontend-разработчик с продуктовым подходом. Строю веб-приложения на React и TypeScript — от Telegram WebApp до корпоративных систем. Активно использую AI-инструменты для ускорения разработки без потери качества."
+  },
+  "skills": {
+    "title": "Навыки",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Инструменты",
+    "infrastructure": "Инфраструктура"
+  },
+  "aiStack": {
+    "title": "AI-стек",
+    "description": "Использую AI как инструмент, а не замену. Осознанный подход к AI-augmented разработке."
+  },
+  "projects": {
+    "title": "Проекты",
+    "viewProject": "Подробнее",
+    "back": "Назад к проектам"
+  },
+  "experience": {
+    "title": "Опыт работы",
+    "present": "н.в."
+  },
+  "contacts": {
+    "title": "Контакты",
+    "subtitle": "Открыт к предложениям и интересным проектам"
+  },
+  "resume": {
+    "title": "Резюме",
+    "download": "Скачать PDF",
+    "position": "Frontend-разработчик",
+    "aboutTitle": "О себе",
+    "skillsTitle": "Навыки",
+    "experienceTitle": "Опыт работы",
+    "projectsTitle": "Проекты",
+    "educationTitle": "Образование"
+  },
+  "projectCase": {
+    "problem": "Проблема",
+    "solution": "Решение",
+    "contribution": "Мой вклад",
+    "stack": "Стек",
+    "result": "Результат",
+    "links": "Ссылки",
+    "github": "GitHub",
+    "demo": "Демо"
+  },
+  "footer": {
+    "copyright": "Все права защищены."
+  }
+}

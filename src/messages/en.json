@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "contacts": "Contacts",
+    "resume": "Resume",
+    "downloadResume": "Download PDF"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Frontend Developer",
+    "description": "Building products that work. Using modern technologies and AI for fast, high-quality development.",
+    "cta": "View Projects",
+    "downloadResume": "Download Resume"
+  },
+  "about": {
+    "title": "About Me",
+    "text": "Frontend developer with a product-focused approach. Building web applications with React and TypeScript — from Telegram WebApps to enterprise systems. Actively leveraging AI tools to accelerate development without sacrificing quality."
+  },
+  "skills": {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools",
+    "infrastructure": "Infrastructure"
+  },
+  "aiStack": {
+    "title": "AI Stack",
+    "description": "Using AI as a tool, not a replacement. A conscious approach to AI-augmented development."
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Details",
+    "back": "Back to Projects"
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present"
+  },
+  "contacts": {
+    "title": "Contacts",
+    "subtitle": "Open to opportunities and interesting projects"
+  },
+  "resume": {
+    "title": "Resume",
+    "download": "Download PDF",
+    "position": "Frontend Developer",
+    "aboutTitle": "About",
+    "skillsTitle": "Skills",
+    "experienceTitle": "Experience",
+    "projectsTitle": "Projects",
+    "educationTitle": "Education"
+  },
+  "projectCase": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "contribution": "My Contribution",
+    "stack": "Stack",
+    "result": "Result",
+    "links": "Links",
+    "github": "GitHub",
+    "demo": "Demo"
+  },
+  "footer": {
+    "copyright": "All rights reserved."
+  }
+}
