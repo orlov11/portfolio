@@ -40,17 +40,17 @@ export interface AiTool {
 
 export const aiTools: AiTool[] = [
   {
-    name: "Claude Code",
+    name: "Claude Code + MCP + Skills",
     description: {
-      ru: "AI-ассистент для разработки в терминале + MCP-серверы для интеграций",
-      en: "AI coding assistant in terminal + MCP servers for integrations",
+      ru: "AI-агент для полного цикла разработки: архитектура, код, ревью, деплой. MCP-серверы для интеграции с GitHub, браузером, файловой системой и внешними API — автоматизация рутины на стероидах",
+      en: "AI agent for full development cycle: architecture, code, review, deploy. MCP servers for GitHub, browser, filesystem and external API integration — routine automation on steroids",
     },
   },
   {
     name: "Lovable",
     description: {
-      ru: "Генерация UI-компонентов и прототипирование интерфейсов",
-      en: "UI component generation and interface prototyping",
+      ru: "AI-генерация полноценных UI из описания. Быстрое прототипирование и итерация интерфейсов за минуты вместо часов",
+      en: "AI-powered full UI generation from descriptions. Rapid prototyping and interface iteration in minutes instead of hours",
     },
   },
 ];
