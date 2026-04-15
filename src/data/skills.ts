@@ -23,6 +23,8 @@ export const skills: Skill[] = [
   { name: "n8n", category: "tools" },
   { name: "Chrome Extensions API", category: "tools" },
   { name: "Telegram Bot API", category: "tools" },
+  { name: "Capacitor", category: "tools" },
+  { name: "Firebase FCM", category: "tools" },
   { name: "Docker Compose", category: "infrastructure" },
   { name: "Nginx", category: "infrastructure" },
   { name: "GitHub Actions", category: "infrastructure" },
