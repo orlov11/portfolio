@@ -4,6 +4,7 @@ import { SectionHeading } from "@/components/ui/section-heading";
 import { Button } from "@/components/ui/button";
 import { personal } from "@/data/personal";
 import { FileDown, Send, Mail } from "lucide-react";
+import { AnimateIn } from "@/components/ui/animate-in";
 
 // GitHub SVG icon (since lucide-react v1 may not have it)
 function GithubIcon({ size = 24 }: { size?: number }) {
@@ -21,43 +22,45 @@ export function Contacts() {
   return (
     <section id="contacts" className="py-section">
       <Container className="flex flex-col items-center text-center">
-        <SectionHeading>{t("title")}</SectionHeading>
-        <p className="mt-4 text-body-lg text-muted-foreground">
-          {t("subtitle")}
-        </p>
-        <div className="mt-8 flex items-center gap-6">
-          <a
-            href={personal.telegram}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <Send size={24} />
-            <span className="text-sm">Telegram</span>
-          </a>
-          <a
-            href={personal.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <GithubIcon size={24} />
-            <span className="text-sm">GitHub</span>
-          </a>
-          <a
-            href={`mailto:${personal.email}`}
-            className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <Mail size={24} />
-            <span className="text-sm">Email</span>
-          </a>
-        </div>
-        <div className="mt-8">
-          <Button href="/api/resume/pdf" variant="secondary" size="lg">
-            {tNav("downloadResume")}
-            <FileDown className="ml-2" size={16} />
-          </Button>
-        </div>
+        <AnimateIn>
+          <SectionHeading>{t("title")}</SectionHeading>
+          <p className="mt-4 text-body-lg text-muted-foreground">
+            {t("subtitle")}
+          </p>
+          <div className="mt-8 flex items-center gap-6">
+            <a
+              href={personal.telegram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Send size={24} />
+              <span className="text-sm">Telegram</span>
+            </a>
+            <a
+              href={personal.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <GithubIcon size={24} />
+              <span className="text-sm">GitHub</span>
+            </a>
+            <a
+              href={`mailto:${personal.email}`}
+              className="flex items-center gap-2 text-muted-foreground transition-colors hover:text-foreground"
+            >
+              <Mail size={24} />
+              <span className="text-sm">Email</span>
+            </a>
+          </div>
+          <div className="mt-8">
+            <Button href="/api/resume/pdf" variant="secondary" size="lg">
+              {tNav("downloadResume")}
+              <FileDown className="ml-2" size={16} />
+            </Button>
+          </div>
+        </AnimateIn>
       </Container>
     </section>
   );
