@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
-import { Github, Send, Mail } from "lucide-react";
+import { GitBranch, Send, Mail } from "lucide-react";
 
 export function Footer() {
   const t = useTranslations("footer");
@@ -14,7 +14,7 @@ export function Footer() {
         </p>
         <div className="flex items-center gap-4">
           <a href="https://github.com/your-github" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="GitHub">
-            <Github size={20} />
+            <GitBranch size={20} />
           </a>
           <a href="https://t.me/your-telegram" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Telegram">
             <Send size={20} />
