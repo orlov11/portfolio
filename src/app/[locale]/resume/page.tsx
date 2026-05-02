@@ -35,7 +35,7 @@ export default async function ResumePage({ params }: ResumePageProps) {
           {/* Header */}
           <div className="border-b border-border pb-6">
             <h1 className="text-display font-bold">
-              {personal.firstName[loc]} {personal.name[loc]}
+              {personal.firstName[loc]} {personal.lastName[loc]}
             </h1>
             <p className="mt-1 text-xl text-muted-foreground">{t("position")}</p>
             <div className="mt-4 flex flex-wrap gap-4 text-sm text-muted-foreground">

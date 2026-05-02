@@ -4,8 +4,10 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { GradientCover } from "@/components/ui/motion-primitives";
+import { GithubIcon } from "@/components/ui/github-icon";
 import { projects } from "@/data/projects";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
 
 interface ProjectPageProps {
   params: Promise<{ locale: string; slug: string }>;
@@ -26,8 +28,10 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
   const tProjects = await getTranslations("projects");
   const loc = locale as "ru" | "en";
 
-  const project = projects.find((p) => p.slug === slug);
-  if (!project) notFound();
+  const projectIndex = projects.findIndex((p) => p.slug === slug);
+  if (projectIndex === -1) notFound();
+  const project = projects[projectIndex];
+  const nextProject = projects[(projectIndex + 1) % projects.length];
 
   const sections = [
     { title: t("problem"), content: project.problem[loc] },
@@ -57,9 +61,11 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           ))}
         </div>
 
-        <div className="mt-8 aspect-video overflow-hidden rounded-2xl bg-muted flex items-center justify-center text-muted-foreground text-sm">
-          Screenshot placeholder
-        </div>
+        <GradientCover
+          seed={project.slug}
+          label={project.title}
+          className="mt-8 aspect-video"
+        />
 
         <div className="mt-12 space-y-10">
           {sections.map(({ title, content }) => (
@@ -92,19 +98,42 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
 
         {(project.links.github || project.links.demo) && (
-          <div className="mt-12 flex gap-4">
+          <div className="mt-12 flex flex-wrap gap-4">
             {project.links.github && (
               <Button href={project.links.github} variant="secondary">
+                <GithubIcon size={14} className="mr-2" />
                 GitHub
               </Button>
             )}
             {project.links.demo && (
               <Button href={project.links.demo} variant="secondary">
+                <ExternalLink size={14} className="mr-2" />
                 Demo
               </Button>
             )}
           </div>
         )}
+
+        <Link
+          href={`/${locale}/projects/${nextProject.slug}`}
+          className="group mt-20 block rounded-2xl border border-border p-6 transition-colors hover:border-foreground/30"
+        >
+          <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground">
+            {tProjects("next")}
+          </p>
+          <div className="mt-3 flex items-center justify-between gap-4">
+            <div>
+              <h3 className="text-heading font-semibold">{nextProject.title}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                {nextProject.shortDescription[loc]}
+              </p>
+            </div>
+            <ArrowRight
+              size={20}
+              className="shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-foreground"
+            />
+          </div>
+        </Link>
       </Container>
     </article>
   );

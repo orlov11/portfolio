@@ -1,21 +1,25 @@
 export const personal = {
-  name: {
+  firstName: {
+    ru: "Святослав",
+    en: "Svyatoslav",
+  },
+  lastName: {
     ru: "Орлов",
     en: "Orlov",
-  },
-  firstName: {
-    ru: "Имя",
-    en: "Name",
   },
   role: {
     ru: "Frontend-разработчик",
     en: "Frontend Developer",
   },
-  email: "your@email.com",
-  telegram: "https://t.me/your-telegram",
-  github: "https://github.com/your-github",
+  email: "svyatoslav.orlov11@gmail.com",
+  telegram: "https://t.me/ProductL77",
+  telegramHandle: "@ProductL77",
+  github: "https://github.com/orlov11",
+  githubHandle: "orlov11",
   location: {
-    ru: "Россия",
-    en: "Russia",
+    ru: "Москва · работаю удалённо",
+    en: "Moscow · remote-friendly",
   },
+  avatar: "/images/avatar.jpg" as string | null,
+  initials: "СО",
 } as const;

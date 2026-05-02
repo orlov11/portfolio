@@ -16,18 +16,53 @@ export const experience: Experience[] = [
     description: {
       ru: [
         "Разработка Telegram WebApp и веб-панелей на React + TypeScript",
-        "Построение архитектуры фронтенда по FSD-методологии",
+        "Конвертация PWA в Android-приложение через Capacitor + публикация в Google Play",
+        "Архитектура фронтенда по FSD-методологии",
         "Интеграция с внешними API через BFF-паттерн (NestJS)",
-        "Создание Chrome-расширения для CRM",
+        "Chrome-расширение для CRM Itigris (Manifest V3)",
         "No-code автоматизации на n8n",
       ],
       en: [
-        "Telegram WebApp and web panel development with React + TypeScript",
-        "Frontend architecture using FSD methodology",
-        "External API integration via BFF pattern (NestJS)",
-        "Chrome extension development for CRM",
-        "No-code automations with n8n",
+        "Telegram WebApp and admin panels on React + TypeScript",
+        "PWA → Android conversion via Capacitor + Google Play release",
+        "FSD-based frontend architecture",
+        "External API integration through BFF pattern (NestJS)",
+        "Chrome extension for Itigris CRM (Manifest V3)",
+        "No-code automations on n8n",
       ],
     },
   },
 ];
+
+export interface Education {
+  school: string;
+  program: { ru: string; en: string };
+  url?: string;
+}
+
+export const education: Education[] = [
+  {
+    school: "Result School",
+    program: {
+      ru: "Frontend-разработка",
+      en: "Frontend Development",
+    },
+    url: "https://result.school/",
+  },
+  {
+    school: "Campfire School · Иван Петриченко",
+    program: {
+      ru: "Авторские курсы по React и архитектуре",
+      en: "Author's courses on React and architecture",
+    },
+    url: "https://campfire-school.com/",
+  },
+];
+
+export interface PetProject {
+  name: string;
+  url: string;
+  description: { ru: string; en: string };
+}
+
+export const petProjects: PetProject[] = [];

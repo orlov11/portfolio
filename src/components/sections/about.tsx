@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
-import { AnimateIn } from "@/components/ui/animate-in";
+import { Reveal } from "@/components/ui/motion-primitives";
 
 export function About() {
   const t = useTranslations("about");
@@ -9,12 +9,14 @@ export function About() {
   return (
     <section id="about" className="py-section">
       <Container className="max-w-2xl">
-        <AnimateIn>
+        <Reveal>
           <SectionHeading>{t("title")}</SectionHeading>
+        </Reveal>
+        <Reveal delay={0.1} blur>
           <p className="mt-6 text-body-lg leading-relaxed text-muted-foreground">
             {t("text")}
           </p>
-        </AnimateIn>
+        </Reveal>
       </Container>
     </section>
   );

@@ -11,37 +11,44 @@
   "hero": {
     "greeting": "Привет, я",
     "role": "Frontend-разработчик",
-    "description": "Создаю продукты, которые работают. Использую современные технологии и AI для быстрой и качественной разработки.",
-    "cta": "Смотреть проекты",
-    "downloadResume": "Скачать резюме"
+    "description": "Делаю Telegram WebApp'ы и нативные Android-приложения через Capacitor — от первого коммита до Google Play. Frontend в Loov.",
+    "ctaPrimary": "Написать в Telegram",
+    "ctaSecondary": "Скачать резюме",
+    "scrollHint": "Проекты ниже"
   },
   "about": {
     "title": "Обо мне",
-    "text": "Frontend-разработчик с продуктовым подходом. Строю веб-приложения на React и TypeScript — от Telegram WebApp до корпоративных систем. Активно использую AI-инструменты для ускорения разработки без потери качества."
+    "text": "Работаю на стыке web и mobile: React, TypeScript, Capacitor. Архитектура → код → ревью → деплой. Использую Claude Code и MCP-серверы для автоматизации рутины — это даёт время на то, что действительно важно: продукт."
   },
   "skills": {
-    "title": "Навыки",
+    "title": "Стек",
+    "mainStackLabel": "Основной стек",
     "frontend": "Frontend",
     "backend": "Backend",
     "tools": "Инструменты",
-    "infrastructure": "Инфраструктура"
-  },
-  "aiStack": {
-    "title": "AI-стек",
-    "description": "AI — мой мультипликатор. Claude Code + MCP-серверы + Skills для полного цикла разработки: от архитектуры до деплоя. Один разработчик — результат команды."
+    "infrastructure": "Инфраструктура",
+    "ai": "AI"
   },
   "projects": {
     "title": "Проекты",
     "viewProject": "Подробнее",
-    "back": "Назад к проектам"
+    "back": "Назад к проектам",
+    "next": "Следующий проект",
+    "morePetProjects": "Ещё пет-проекты на GitHub"
   },
   "experience": {
     "title": "Опыт работы",
-    "present": "н.в."
+    "present": "н.в.",
+    "educationTitle": "Образование",
+    "petProjectsLink": "Пет-проекты на GitHub →"
   },
   "contacts": {
-    "title": "Контакты",
-    "subtitle": "Открыт к предложениям и интересным проектам"
+    "title": "Свяжемся?",
+    "subtitle": "Открыт к предложениям и интересным проектам. Быстрее всего — в Telegram.",
+    "primaryCta": "Написать в Telegram",
+    "or": "или",
+    "email": "Email",
+    "github": "GitHub"
   },
   "resume": {
     "title": "Резюме",

@@ -11,37 +11,44 @@
   "hero": {
     "greeting": "Hi, I'm",
     "role": "Frontend Developer",
-    "description": "Building products that work. Using modern technologies and AI for fast, high-quality development.",
-    "cta": "View Projects",
-    "downloadResume": "Download Resume"
+    "description": "I build Telegram WebApps and native Android apps via Capacitor — from first commit to Google Play. Frontend at Loov.",
+    "ctaPrimary": "Message me on Telegram",
+    "ctaSecondary": "Download resume",
+    "scrollHint": "Projects below"
   },
   "about": {
-    "title": "About Me",
-    "text": "Frontend developer with a product-focused approach. Building web applications with React and TypeScript — from Telegram WebApps to enterprise systems. Actively leveraging AI tools to accelerate development without sacrificing quality."
+    "title": "About",
+    "text": "I work across web and mobile: React, TypeScript, Capacitor. Architecture → code → review → ship. I use Claude Code and MCP servers to automate the routine — so the time goes into what actually matters: the product."
   },
   "skills": {
-    "title": "Skills",
+    "title": "Stack",
+    "mainStackLabel": "Core stack",
     "frontend": "Frontend",
     "backend": "Backend",
     "tools": "Tools",
-    "infrastructure": "Infrastructure"
-  },
-  "aiStack": {
-    "title": "AI Stack",
-    "description": "AI is my multiplier. Claude Code + MCP servers + Skills for full dev cycle: from architecture to deploy. One developer — team-level output."
+    "infrastructure": "Infrastructure",
+    "ai": "AI"
   },
   "projects": {
     "title": "Projects",
-    "viewProject": "View Details",
-    "back": "Back to Projects"
+    "viewProject": "View details",
+    "back": "Back to projects",
+    "next": "Next project",
+    "morePetProjects": "More pet projects on GitHub"
   },
   "experience": {
     "title": "Experience",
-    "present": "Present"
+    "present": "Present",
+    "educationTitle": "Education",
+    "petProjectsLink": "Pet projects on GitHub →"
   },
   "contacts": {
-    "title": "Contacts",
-    "subtitle": "Open to opportunities and interesting projects"
+    "title": "Let's talk",
+    "subtitle": "Open to opportunities and interesting projects. Telegram is fastest.",
+    "primaryCta": "Message me on Telegram",
+    "or": "or",
+    "email": "Email",
+    "github": "GitHub"
   },
   "resume": {
     "title": "Resume",
@@ -56,7 +63,7 @@
   "projectCase": {
     "problem": "Problem",
     "solution": "Solution",
-    "contribution": "My Contribution",
+    "contribution": "My contribution",
     "stack": "Stack",
     "result": "Result",
     "links": "Links",
