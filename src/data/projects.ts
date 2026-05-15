@@ -55,7 +55,7 @@ export const projects: Project[] = [
       en: "Working product: optics customers get push in the PWA and messages from the bot, while the admin runs targeted broadcasts in one click.",
     },
     links: {},
-    image: "/images/projects/loov-care.png",
+    image: "/images/projects/loov-care.jpg",
   },
   {
     slug: "staff-focus",
@@ -114,7 +114,7 @@ export const projects: Project[] = [
       en: "Native Android app with biometrics and push notifications, used daily by employees for task management and KPI tracking.",
     },
     links: {},
-    image: "/images/projects/staff-focus.png",
+    image: "/images/projects/staff-focus.jpg",
   },
   {
     slug: "jarvis",
@@ -146,7 +146,7 @@ export const projects: Project[] = [
       en: "Extension used by the team daily for CRM work.",
     },
     links: { github: "https://github.com/LoovTeam/jarvis" },
-    image: "/images/projects/jarvis.png",
+    image: undefined,
   },
   {
     slug: "rachel",
@@ -190,6 +190,6 @@ export const projects: Project[] = [
       en: "Emails no longer get lost in the shared inbox: every notification reaches the right person in Telegram, reaction time drops to minutes.",
     },
     links: { github: "https://github.com/LoovTeam/Rachel" },
-    image: "/images/projects/rachel.png",
+    image: "/images/projects/rachel.jpg",
   },
 ];

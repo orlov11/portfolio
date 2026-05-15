@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { GradientCover } from "@/components/ui/motion-primitives";
+import { ProjectCover } from "@/components/ui/project-cover";
 import { GithubIcon } from "@/components/ui/github-icon";
 import { projects } from "@/data/projects";
 import { ArrowLeft, ArrowRight, ExternalLink } from "lucide-react";
@@ -55,17 +55,21 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
           {project.shortDescription[loc]}
         </p>
 
+        <ProjectCover
+          image={project.image}
+          slug={project.slug}
+          title={project.title}
+          priority
+          openable
+          sizes="(min-width: 768px) 768px, 100vw"
+          className="mt-8 aspect-video"
+        />
+
         <div className="mt-6 flex flex-wrap gap-2">
           {project.stack.map((tech) => (
             <Badge key={tech}>{tech}</Badge>
           ))}
         </div>
-
-        <GradientCover
-          seed={project.slug}
-          label={project.title}
-          className="mt-8 aspect-video"
-        />
 
         <div className="mt-12 space-y-10">
           {sections.map(({ title, content }) => (
