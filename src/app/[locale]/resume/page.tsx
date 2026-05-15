@@ -6,7 +6,7 @@ import { personal } from "@/data/personal";
 import { skills } from "@/data/skills";
 import { experience } from "@/data/experience";
 import { projects } from "@/data/projects";
-import { FileDown, Mail, MapPin, Send } from "lucide-react";
+import { FileDown, Mail, MapPin } from "lucide-react";
 
 interface ResumePageProps {
   params: Promise<{ locale: string }>;
@@ -25,7 +25,7 @@ export default async function ResumePage({ params }: ResumePageProps) {
     <div className="py-section-sm print:py-0">
       <Container className="max-w-3xl">
         <div className="mb-8 flex justify-end print:hidden">
-          <Button href="/api/resume/pdf" variant="accent">
+          <Button href={`/orlov-resume-${loc}.pdf`} variant="accent">
             <FileDown size={16} className="mr-2" />
             {t("download")}
           </Button>
@@ -43,11 +43,12 @@ export default async function ResumePage({ params }: ResumePageProps) {
                 <Mail size={14} />
                 {personal.email}
               </span>
-              <a href={personal.telegram} className="flex items-center gap-1 hover:text-foreground">
-                <Send size={14} />
-                Telegram
-              </a>
-              <a href={personal.github} className="flex items-center gap-1 hover:text-foreground">
+              <a
+                href={personal.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 hover:text-foreground"
+              >
                 GitHub
               </a>
               <span className="flex items-center gap-1">
@@ -62,8 +63,8 @@ export default async function ResumePage({ params }: ResumePageProps) {
             <h2 className="text-heading font-semibold">{t("aboutTitle")}</h2>
             <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
               {loc === "ru"
-                ? "Frontend-разработчик с продуктовым подходом. Строю веб-приложения на React и TypeScript — от Telegram WebApp до корпоративных систем. Активно использую AI-инструменты для ускорения разработки."
-                : "Frontend developer with a product-focused approach. Building web applications with React and TypeScript — from Telegram WebApps to enterprise systems. Actively leveraging AI tools to accelerate development."}
+                ? "Frontend / Mobile-разработчик с продуктовым подходом. Строю веб-приложения на React и TypeScript и конвертирую их в нативные Android-приложения через Capacitor — от Telegram WebApp до корпоративных систем с публикацией в Google Play. Активно использую AI-инструменты для ускорения разработки."
+                : "Frontend / Mobile developer with a product-focused approach. I build web apps with React and TypeScript and ship them as native Android apps via Capacitor — from Telegram WebApps to enterprise systems with Google Play releases. Actively use AI tools to speed up development."}
             </p>
           </div>
 

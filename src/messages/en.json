@@ -10,15 +10,34 @@
   },
   "hero": {
     "greeting": "Hi, I'm",
-    "role": "Frontend Developer",
+    "role": "Frontend / Mobile Developer",
     "description": "I build Telegram WebApps and native Android apps via Capacitor — from first commit to Google Play. Frontend at Loov.",
-    "ctaPrimary": "Message me on Telegram",
+    "ctaPrimary": "Email me",
     "ctaSecondary": "Download resume",
     "scrollHint": "Projects below"
   },
   "about": {
     "title": "About",
     "text": "I work across web and mobile: React, TypeScript, Capacitor. Architecture → code → review → ship. I use Claude Code and MCP servers to automate the routine — so the time goes into what actually matters: the product."
+  },
+  "approach": {
+    "title": "Approach",
+    "one": {
+      "title": "From first commit to production",
+      "body": "I take the task end to end: architecture, code, review, deploy. No handoffs between «the frontend dev who wrote it» and «the frontend dev who fixes it»."
+    },
+    "two": {
+      "title": "Web and mobile are one product",
+      "body": "A React + Vite PWA becomes a native Android app via Capacitor: one codebase, biometrics, push notifications, Google Play."
+    },
+    "three": {
+      "title": "Architecture you can maintain",
+      "body": "FSD on the frontend, BFF on the backend, monorepo for multi-app setups. So that six months later the code is readable, not «let's burn it down and rewrite»."
+    },
+    "four": {
+      "title": "AI as a co-author, not magic",
+      "body": "I use Claude Code and MCP servers for the routine: boilerplate, reviews, migrations, docs. Decisions and the product stay with me."
+    }
   },
   "skills": {
     "title": "Stack",
@@ -44,8 +63,8 @@
   },
   "contacts": {
     "title": "Let's talk",
-    "subtitle": "Open to opportunities and interesting projects. Telegram is fastest.",
-    "primaryCta": "Message me on Telegram",
+    "subtitle": "Open to projects: Telegram WebApps, native Android via Capacitor, admin panels. Drop me an email — I'll get back to you.",
+    "primaryCta": "Email me",
     "or": "or",
     "email": "Email",
     "github": "GitHub"
@@ -53,7 +72,7 @@
   "resume": {
     "title": "Resume",
     "download": "Download PDF",
-    "position": "Frontend Developer",
+    "position": "Frontend / Mobile Developer",
     "aboutTitle": "About",
     "skillsTitle": "Skills",
     "experienceTitle": "Experience",

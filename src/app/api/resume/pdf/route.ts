@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 
 export async function GET(request: Request) {
+  if (process.env.NODE_ENV !== "development") {
+    return new NextResponse("Not Found", { status: 404 });
+  }
+
   const { searchParams } = new URL(request.url);
   const locale = searchParams.get("locale") || "ru";
 

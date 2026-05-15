@@ -10,15 +10,34 @@
   },
   "hero": {
     "greeting": "Привет, я",
-    "role": "Frontend-разработчик",
+    "role": "Frontend / Mobile-разработчик",
     "description": "Делаю Telegram WebApp'ы и нативные Android-приложения через Capacitor — от первого коммита до Google Play. Frontend в Loov.",
-    "ctaPrimary": "Написать в Telegram",
+    "ctaPrimary": "Написать на почту",
     "ctaSecondary": "Скачать резюме",
     "scrollHint": "Проекты ниже"
   },
   "about": {
     "title": "Обо мне",
     "text": "Работаю на стыке web и mobile: React, TypeScript, Capacitor. Архитектура → код → ревью → деплой. Использую Claude Code и MCP-серверы для автоматизации рутины — это даёт время на то, что действительно важно: продукт."
+  },
+  "approach": {
+    "title": "Подход",
+    "one": {
+      "title": "От первого коммита до прода",
+      "body": "Беру задачу целиком: архитектура, код, ревью, деплой. Без передач рук между «фронтом, который написал», и «фронтом, который чинит»."
+    },
+    "two": {
+      "title": "Web и mobile — один продукт",
+      "body": "PWA на React + Vite превращается в нативное Android-приложение через Capacitor: одна кодовая база, биометрия, push, Google Play."
+    },
+    "three": {
+      "title": "Архитектура, которую можно поддерживать",
+      "body": "FSD на фронтенде, BFF на бэкенде, монорепо для нескольких приложений. Чтобы через полгода код был читаем, а не «всё сломаем и перепишем»."
+    },
+    "four": {
+      "title": "AI как соавтор, а не как магия",
+      "body": "Claude Code и MCP-серверы беру для рутины: boilerplate, ревью, миграции, документация. Решения и продукт — за мной."
+    }
   },
   "skills": {
     "title": "Стек",
@@ -44,8 +63,8 @@
   },
   "contacts": {
     "title": "Свяжемся?",
-    "subtitle": "Открыт к предложениям и интересным проектам. Быстрее всего — в Telegram.",
-    "primaryCta": "Написать в Telegram",
+    "subtitle": "Открыт к проектам: Telegram WebApp, нативный Android через Capacitor, веб-панели. Пишите на почту — отвечу.",
+    "primaryCta": "Написать на почту",
     "or": "или",
     "email": "Email",
     "github": "GitHub"
@@ -53,7 +72,7 @@
   "resume": {
     "title": "Резюме",
     "download": "Скачать PDF",
-    "position": "Frontend-разработчик",
+    "position": "Frontend / Mobile-разработчик",
     "aboutTitle": "О себе",
     "skillsTitle": "Навыки",
     "experienceTitle": "Опыт работы",

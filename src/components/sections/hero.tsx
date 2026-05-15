@@ -7,7 +7,7 @@ import { motion, useScroll, useTransform } from "motion/react";
 import { Container } from "@/components/ui/container";
 import { Button } from "@/components/ui/button";
 import { Magnetic, Reveal } from "@/components/ui/motion-primitives";
-import { Send, FileDown, ArrowDown } from "lucide-react";
+import { Mail, FileDown, ArrowDown } from "lucide-react";
 import { personal } from "@/data/personal";
 import { cn } from "@/lib/utils";
 
@@ -73,7 +73,7 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.25}>
-          <p className="mt-2 text-display text-muted-foreground font-light">
+          <p className="mt-2 text-xl text-muted-foreground font-light sm:text-2xl">
             {t("role")}
           </p>
         </Reveal>
@@ -87,12 +87,12 @@ export function Hero() {
         <Reveal delay={0.45}>
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
             <Magnetic>
-              <Button href={personal.telegram} size="lg">
-                <Send className="mr-2" size={16} />
+              <Button href={`mailto:${personal.email}`} size="lg">
+                <Mail className="mr-2" size={16} />
                 {t("ctaPrimary")}
               </Button>
             </Magnetic>
-            <Button href="/api/resume/pdf" variant="secondary" size="lg">
+            <Button href={`/orlov-resume-${locale}.pdf`} variant="secondary" size="lg">
               <FileDown className="mr-2" size={16} />
               {t("ctaSecondary")}
             </Button>

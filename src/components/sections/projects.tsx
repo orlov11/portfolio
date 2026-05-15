@@ -3,7 +3,6 @@ import Link from "next/link";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Card } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import {
   GradientCover,
   Reveal,
@@ -40,17 +39,22 @@ export function Projects() {
                       className="mb-4 aspect-video"
                     />
                     <h3 className="text-heading font-semibold">{project.title}</h3>
-                    <p className="mt-2 flex-1 text-sm text-muted-foreground">
+                    <p className="mt-2 text-sm text-muted-foreground">
                       {project.shortDescription[locale]}
                     </p>
-                    <div className="mt-4 flex flex-wrap gap-1.5">
-                      {project.stack.slice(0, 4).map((tech) => (
-                        <Badge key={tech}>{tech}</Badge>
+
+                    <ul className="mt-4 flex-1 space-y-1.5">
+                      {project.metrics.map((m, index) => (
+                        <li
+                          key={index}
+                          className="flex items-start gap-2 text-sm text-foreground/80"
+                        >
+                          <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-accent" />
+                          {m[locale]}
+                        </li>
                       ))}
-                      {project.stack.length > 4 && (
-                        <Badge>+{project.stack.length - 4}</Badge>
-                      )}
-                    </div>
+                    </ul>
+
                     <div className="mt-4 flex items-center gap-1 text-sm font-medium text-accent">
                       {t("viewProject")}
                       <ArrowRight

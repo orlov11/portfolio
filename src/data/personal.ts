@@ -8,8 +8,8 @@ export const personal = {
     en: "Orlov",
   },
   role: {
-    ru: "Frontend-разработчик",
-    en: "Frontend Developer",
+    ru: "Frontend / Mobile-разработчик",
+    en: "Frontend / Mobile Developer",
   },
   email: "svyatoslav.orlov11@gmail.com",
   telegram: "https://t.me/ProductL77",

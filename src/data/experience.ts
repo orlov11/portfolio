@@ -9,8 +9,8 @@ export const experience: Experience[] = [
   {
     company: "Loov",
     position: {
-      ru: "Frontend-разработчик",
-      en: "Frontend Developer",
+      ru: "Frontend / Mobile-разработчик",
+      en: "Frontend / Mobile Developer",
     },
     period: { start: "2025-06", end: null },
     description: {
