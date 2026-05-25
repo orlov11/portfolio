@@ -39,15 +39,15 @@
 
   --font-sans: var(--font-inter), system-ui, sans-serif;
 
-  --text-display-xl: 4.5rem;
-  --text-display-xl--line-height: 1.1;
+  --text-display-xl: clamp(2.75rem, 9vw, 4.5rem);
+  --text-display-xl--line-height: 1.05;
   --text-display-xl--letter-spacing: -0.02em;
 
-  --text-display-lg: 3.5rem;
+  --text-display-lg: clamp(2.25rem, 7vw, 3.5rem);
   --text-display-lg--line-height: 1.1;
   --text-display-lg--letter-spacing: -0.02em;
 
-  --text-display: 2.5rem;
+  --text-display: clamp(1.875rem, 5vw, 2.5rem);
   --text-display--line-height: 1.2;
   --text-display--letter-spacing: -0.01em;
 
@@ -57,8 +57,8 @@
   --text-body-lg: 1.125rem;
   --text-body-lg--line-height: 1.6;
 
-  --spacing-section: 8rem;
-  --spacing-section-sm: 4rem;
+  --spacing-section: clamp(3.5rem, 9vw, 8rem);
+  --spacing-section-sm: clamp(2.5rem, 6vw, 4rem);
 
   --radius-xl: 1rem;
   --radius-2xl: 1.25rem;

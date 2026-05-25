@@ -49,7 +49,7 @@ export function Hero() {
   const fullName = `${personal.firstName[locale]} ${personal.lastName[locale]}`;
 
   return (
-    <section className="relative flex min-h-[calc(100vh-4rem)] items-center overflow-hidden">
+    <section className="relative flex min-h-[80vh] items-center overflow-hidden py-12 sm:min-h-[calc(100vh-4rem)] sm:py-0">
       <motion.div
         aria-hidden
         style={{ y: orbY, scale: orbScale }}
@@ -62,30 +62,30 @@ export function Hero() {
         </Reveal>
 
         <Reveal delay={0.1} blur>
-          <p className="mt-6 text-body-lg text-muted-foreground">{t("greeting")}</p>
+          <p className="mt-4 text-body-lg text-muted-foreground sm:mt-6">{t("greeting")}</p>
         </Reveal>
 
         <Reveal delay={0.15} blur>
-          <h1 className="mt-2 text-display-xl font-bold tracking-tight">
+          <h1 className="mt-1 text-display-xl font-bold tracking-tight sm:mt-2">
             {personal.firstName[locale]}{" "}
             <span className="text-muted-foreground">{personal.lastName[locale]}</span>
           </h1>
         </Reveal>
 
         <Reveal delay={0.25}>
-          <p className="mt-2 text-xl text-muted-foreground font-light sm:text-2xl">
+          <p className="mt-1 text-xl text-muted-foreground font-light sm:mt-2 sm:text-2xl">
             {t("role")}
           </p>
         </Reveal>
 
         <Reveal delay={0.35}>
-          <p className="mt-6 max-w-xl text-body-lg text-muted-foreground">
+          <p className="mt-4 max-w-xl text-body-lg text-muted-foreground sm:mt-6">
             {t("description")}
           </p>
         </Reveal>
 
         <Reveal delay={0.45}>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
+          <div className="mt-6 flex flex-col items-center gap-3 sm:mt-10 sm:flex-row sm:gap-4">
             <Magnetic>
               <Button href={`mailto:${personal.email}`} size="lg">
                 <Mail className="mr-2" size={16} />
@@ -102,7 +102,7 @@ export function Hero() {
         <Reveal delay={0.7}>
           <a
             href="#projects"
-            className="mt-16 inline-flex flex-col items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
+            className="mt-10 inline-flex flex-col items-center gap-2 text-xs text-muted-foreground transition-colors hover:text-foreground sm:mt-16"
           >
             <span>{t("scrollHint")}</span>
             <motion.span
